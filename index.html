@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Tracker</title>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Attendance Tracker</h1>
+    <form id="attendance-form">
+        <label for="code">Attendance Code (8 digits):</label>
+        <input type="text" id="code" maxlength="8" required><br>
+
+        <label for="module">Module:</label>
+        <input type="text" id="module" required><br>
+
+        <label for="type">Session Type:</label>
+        <select id="type" required>
+            <option value="Lecture">Lecture</option>
+            <option value="Tutorial">Tutorial</option>
+            <option value="Lab">Lab</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <button type="submit">Submit Attendance</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
